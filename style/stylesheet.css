@@ -1,0 +1,25 @@
+body{	background-color: none;
+		background-image: url(lol.jpge);
+	}
+.form{ border:1px solid black;
+		text-align: center;
+		width: 20%;
+		position: absolute;
+		margin-left: 600px;
+		margin-top: 60px;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		border-radius: 6px;
+		}
+
+input[type=text],[type=password]{
+	padding: 10px 10px;
+	margin: 10px 10px;
+	border-radius: 6px;
+}
+
+.button{
+	background-color: #80ff00;
+	padding: 3px 3px;
+	width: 20%;
+}
