@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default">
-	<div class="container-fluid" style="background-color: #5cb85c;">
+	<div class="container-fluid" style="background-color: #24292e;">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" aria-expanded="false">
 			<span class="sr-only">Toggle navigation</span>
@@ -43,8 +43,8 @@
 
 			?>
 
-	        <li><a href='profile.php?<?php echo "u_id=$user_id" ?>'><?php echo "$first_name"; ?></a></li>
-	       	<li><a href="home.php">Home</a></li>
+	        <li><a href='profile.php?<?php echo "u_id=$user_id" ?>' style="color: white;"><?php echo "$first_name"; ?></a></li>
+	       	<li><a href="home.php" style="color: white;">Home</a></li>
 
 
 

@@ -6,10 +6,9 @@ include("includes/head.php");
 <html>
 <?php
 	$user = $_SESSION['user_email'];
-	$get_user = "select * from users where user_email='$user'";
+	$get_user = "SELECT * FROM users WHERE user_email='".$user."'";
 	$run_user = mysqli_query($con,$get_user);
 	$row = mysqli_fetch_array($run_user);
-
 	$user_name = $row['user_name'];
 ?>
 <head>
@@ -32,15 +31,13 @@ include("includes/head.php");
 		<center>
 			<center><h3><strong>Add New Projects</strong></h3><br></center>
 		<form action="home.php?id=<?php echo $user_id; ?>" method="post" id="f" enctype="multipart/form-data">
-		<!--	<input type="text" name="title"   id="title" placeholder="title" style="margin:10px; width:70%;" />
-			<input type="text" name="members"   id="member" placeholder="members" style="margin:10px; width:70%;"  />-->
 				<textarea class="form-control" id="title" rows="1" name="title" placeholder="title" ></textarea><br>
 		<textarea class="form-control" id="content" rows="4" name="content" placeholder="content"></textarea><br>
 		<textarea class="form-control" id="title" rows="1" name="members" placeholder="members" ></textarea><br>
-		<label class="btn btn-warning" id="upload_image_button" style="top:73%;">Project Image
+		<label  id="upload_image_button" style="top:73%; background-color:#24292e; color: hsla(0,0%,100%,.75);padding: 8px 4px; left: 79.41%; width: 150px;">Project Image
 		<input type="file" name="upload_image" size="30" >
 		</label>
-		<button id="btn-post" class="btn btn-success" name="sub">Post</button>
+		<button  id="btn-post" class="btn btn-success" style="background-color:#24292e; color: hsla(0,0%,100%,.75); " name="sub">Post</button>
 		</form>
 		<?php insertPost(); ?>
 		</center>

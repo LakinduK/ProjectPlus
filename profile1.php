@@ -43,20 +43,21 @@ include("includes/head.php");
 
 
 		Username<br />
-	<input type="text" name="username" placeholder="username" class="form-control input-md" value="<?php echo $user_name; ?>"><br />
+	<input type="text" name="username" placeholder="username"  value="<?php echo $user_name; ?>"><br />
 	First Name<br />
-	<input type="text" name="firstname" placeholder="firstname" class="form-control input-md" value="<?php echo $fname; ?>"><br />
+	<input type="text" name="firstname" placeholder="firstname"  value="<?php echo $fname; ?>"><br />
 		Second Name<br />
-	<input type="text" name="lastname" placeholder="lastname" class="form-control input-md" value="<?php echo $lname; ?>" ><br />
+	<input type="text" name="lastname" placeholder="lastname"  value="<?php echo $lname; ?>" ><br />
 		Description<br />
-	<input type="text" name="udesc" placeholder="discription" class="form-control input-md" value="<?php echo $desc; ?>"><br>
+	<input type="text" name="udesc" placeholder="discription"  value="<?php echo $desc; ?>"><br>
 		Batch<br />
-	<input type="text" name="batch" placeholder="batch" class="form-control input-md" value="<?php echo $batch; ?>"><br>
+	<input type="text" name="batch" placeholder="batch"  value="<?php echo $batch; ?>"><br>
 		Degree<br />
-	<input type="text" name="udegree" placeholder="degree" class="form-control input-md" value="<?php echo $degree; ?>"><br>
+	<input type="text" name="udegree" placeholder="degree"  value="<?php echo $degree; ?>"><br>
 		Password<br />
-	<input type="password" name="upws" placeholder="********" value="<?php echo $pass; ?>" class="form-control input-md" ><br>
-	<input type="submit" name="edit_btn" class="edit_btn" value="save changes">
+	<input type="password" name="upws" placeholder="********" value="<?php echo $pass; ?>"  ><br>
+	<input type="submit" name="edit_btn" style="background-color:#24292e; color: hsla(0,0%,100%,.75); border: none;text-decoration: none;
+  display: inline-block;"value="save changes">
 		</center>
 </form>
 </div>

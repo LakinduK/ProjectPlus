@@ -114,8 +114,7 @@ function get_posts(){
 						</div>
 					</div><br>
 
-					<a href='single.php?post_id=$post_id' style='float:right;'><button class='btn btn-info'>rating</button></a><br>
-
+					
 				</div>
 				<div class='col-sm-3'>
 				</div>

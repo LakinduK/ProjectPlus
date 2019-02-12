@@ -2,7 +2,7 @@ body{
   overflow-x: hidden;
 }
 .edit{
-  width: 50%;
+  width: 30%;
   height: 90%;
   margin: 22px auto;
   background-color: #5cb85c;
@@ -14,7 +14,7 @@ h1{
   text-align: center;
 }
 .edit_btn{
-  width: 60%;
+  width: 20%;
   border-radius: 30px;
   background-color: #187FAB;
 }

@@ -20,7 +20,16 @@ input[type="file"]{
 	display: none;
 }
 input[type=text] {
-	width: 100%;
+	width: 30%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+input[type=password] {
+	width: 30%;
 	padding: 12px 20px;
 	margin: 8px 0;
 	display: inline-block;
@@ -91,7 +100,6 @@ p{
 		transform: translate(-50%, -50%);
 }
 .col-sm-2{
-		background-color: #e6e6e6;
 		text-align: center;
 		left: 0.9%;
 		border-radius: 5px;
@@ -103,4 +111,7 @@ p{
 #post_img{
 		height: 300px;
 		width: 100%;
+}
+.navbar navbar-default{
+	position: fixed;
 }
