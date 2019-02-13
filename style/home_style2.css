@@ -1,6 +1,9 @@
 body{
+
 	overflow-x: hidden;
-	background-color: none;
+
+	
+
 }
 #upload_image_button{
 	position: absolute;

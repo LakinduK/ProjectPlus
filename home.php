@@ -33,6 +33,22 @@ include("includes/head.php");
   text-decoration: none;
   cursor: pointer;}
   .button:hover {opacity: 1}
+
+	.button1 {border: none;
+		background-color:#24292e;
+	  color: white;
+	  padding: 11px 12px;
+	  text-align: center;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  opacity: 0.6;
+	  transition: 0.3s;
+	  display: inline-block;
+	  text-decoration: none;
+	  cursor: pointer;
+		right: 20%;
+	}
+	  .button1:hover {opacity: 1}
 	</style>
 
 </head>
@@ -50,7 +66,7 @@ include("includes/head.php");
 				<div class="error"></div>
 		<textarea class="form-control" id="content" rows="4" name="content" placeholder="content"></textarea><br>
 		<textarea class="form-control" id="title" rows="1" name="members" placeholder="members" ></textarea><br>
-		<label  id="upload_image_button" class="button" style="top:73%;">Project Image
+		<label  id="upload_image_button" class="button1" style="top:70%; right:5%">Project Image
 		<input type="file" name="upload_image" size="30" >
 		</label>
 		<button  id="btn-post" class="button" name="sub">Post</button>

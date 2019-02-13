@@ -30,21 +30,27 @@
 </head>
 <style>
 	body{
+		background-image: url("bg2.png");
+		background-color: black;
+		padding-top: 100px;
+
+
 		overflow-x: hidden;
 
 	}
+
 	.main-content{
 		width: 32%;
 		height: 60%;
 		margin: 22px auto;
 		background-color: #24292e;
-		border: 2px solid #e6e6e6;
+		border: none;
 		padding: 40px 50px;
 		margin-right: 73px;
 		opacity: 1;
 	}
 	.header{
-		border: 0px solid #000;
+		border:none;
 		margin-bottom: 5px;
 	}
 	.well{
@@ -52,7 +58,7 @@
 	}
 	#signin{
 		width: 60%;
-		border-radius: 30px;
+		border-radius: none;
 		background-color: #187FAB;
 	}
 	.overlap-text{
@@ -85,9 +91,11 @@
 <body>
 <div class="row">
 	<div class="col-sm-12">
-		<div class="well">
+		<div class="well" style="margin-top: -106px;
+    border: none;">
 			<center><img src="includes/logo.png" style=" width: 190px;" /></center>
 		</div>
+
 	</div>
 </div>
 <div class="row">
@@ -96,6 +104,7 @@
 			<div class="header">
 				<h3 style="text-align: center; color: #bababa;" strong>Login to Project+</strong></h3>
 			</div>
+
 			<div class="l-part">
 				<form action="" method="post" name="signin" onsubmit="return validate()">
 					<input type="email" name="email" placeholder="Email" required="required" class="form-control input-md"><br>
