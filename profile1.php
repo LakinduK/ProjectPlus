@@ -27,6 +27,27 @@ include("includes/head.php");
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style/home_style2.css">
+  <style type="text/css">
+  	input[type=text]{
+  		width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  	}
+
+  	input[type=password]{
+  		width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  	}
+  </style>
 
 </head>
 <body>
@@ -36,26 +57,29 @@ include("includes/head.php");
 	?>
 
 
-	<div><h1 ><small>Edit your prifile</small></h1></div>
+	<div><h1><small><center>Edit your prifile</center></small></h1></div>
 <div class="edit">
 <form name="edit_profile" class="edit_profile" action="edit.php" method="post">
 		<center>
+<table>
+	<tr><td>
 
-
-		Username<br />
-	<input type="text" name="username" placeholder="username"  value="<?php echo $user_name; ?>"><br />
-	First Name<br />
-	<input type="text" name="firstname" placeholder="firstname"  value="<?php echo $fname; ?>"><br />
-		Second Name<br />
-	<input type="text" name="lastname" placeholder="lastname"  value="<?php echo $lname; ?>" ><br />
-		Description<br />
-	<input type="text" name="udesc" placeholder="discription"  value="<?php echo $desc; ?>"><br>
-		Batch<br />
-	<input type="text" name="batch" placeholder="batch"  value="<?php echo $batch; ?>"><br>
-		Degree<br />
-	<input type="text" name="udegree" placeholder="degree"  value="<?php echo $degree; ?>"><br>
-		Password<br />
-	<input type="password" name="upws" placeholder="********" value="<?php echo $pass; ?>"  ><br>
+		Username</td>
+	<td><input type="text" name="username" placeholder="username"  value="<?php echo $user_name; ?>"></td></tr>
+	<tr><td>
+	First Name</td>
+	<td><input type="text" name="firstname" placeholder="firstname"  value="<?php echo $fname; ?>"></td></tr>
+	<tr><td>
+	Second Name</td>
+	<td><input type="text" name="lastname" placeholder="lastname"  value="<?php echo $lname; ?>" ></td></tr>
+		<tr><td>Description</td>
+	<td><input type="text" name="udesc" placeholder="discription"  value="<?php echo $desc; ?>"></td></tr>
+		<tr><td>Batch</td>
+	<td><input type="text" name="batch" placeholder="batch"  value="<?php echo $batch; ?>"></td></tr>
+		<tr><td>Degree</td>
+	<td><input type="text" name="udegree" placeholder="degree"  value="<?php echo $degree; ?>"></td></tr>
+		<tr><td>Password</td>
+	<td><input type="password" name="upws" placeholder="********" value="<?php echo $pass; ?>"  ></td></tr></table>
 	<input type="submit" name="edit_btn" style="background-color:#24292e; color: hsla(0,0%,100%,.75); border: none;text-decoration: none;
   display: inline-block;"value="save changes">
 		</center>

@@ -3,7 +3,7 @@ include("includes/connection.php");
 include("functions/functions.php");
 ?>
 <nav class="navbar navbar-default">
-	<div class="container-fluid" style="background-color: #5cb85c;">
+	<div class="container-fluid" style="background-color: #24292e;">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" aria-expanded="false">
 			<span class="sr-only">Toggle navigation</span>

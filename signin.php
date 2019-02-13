@@ -8,6 +8,25 @@
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
 	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 	<link rel="stylesheet" type="text/css" href="style/home_style2.css">
+
+	<script>
+	function validate()
+	{
+		var mail= document.forms["signin"]["email"].value;
+		var pw= document.forms["signin"]["pass"].value;
+
+		if(pw=="")
+		{
+			alert("Password is missing. Re enter");
+			return false;
+		}
+		if(email=="")
+		{
+			alert("email is missing. Re enter");
+			return false;
+		}
+	}
+</script>
 </head>
 <style>
 	body{
@@ -78,7 +97,7 @@
 				<h3 style="text-align: center; color: #bababa;" strong>Login to Project+</strong></h3>
 			</div>
 			<div class="l-part">
-				<form action="" method="post">
+				<form action="" method="post" name="signin" onsubmit="return validate()">
 					<input type="email" name="email" placeholder="Email" required="required" class="form-control input-md"><br>
 					<div class="overlap-text">
 						<input type="password" name="pass" placeholder="Password" required="required" class="form-control input-md" style="width: 100%;"><br>
