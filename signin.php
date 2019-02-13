@@ -5,27 +5,26 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style/allstyle.css">
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 	<link rel="stylesheet" type="text/css" href="style/home_style2.css">
 
-	<script>
-	function validate()
-	{
-		var mail= document.forms["signin"]["email"].value;
-		var pw= document.forms["signin"]["pass"].value;
+<script>
+	function validation() {
+	var x= document.forms["signin"]["email"].value;
+	var pw= document.forms["signin"]["pass"].value;
+	
 
-		if(pw=="")
-		{
-			alert("Password is missing. Re enter");
-			return false;
-		}
-		if(email=="")
-		{
-			alert("email is missing. Re enter");
-			return false;
-		}
+	if(x=="")
+	{
+		alert("Missing mail. please enter e mail");
+		return false;
 	}
+	
+	if(pw=="")
+	{
+		alert("Missing password. please enter password");
+		return false;
+	}
+}
 </script>
 </head>
 <style>
@@ -106,20 +105,21 @@
 			</div>
 
 			<div class="l-part">
-				<form action="" method="post" name="signin" onsubmit="return validate()">
-					<input type="email" name="email" placeholder="Email" required="required" class="form-control input-md"><br>
+				<form action="login.php" method="post" name="signin" onsubmit="return validation()">
+					<input type="email" name="email" placeholder="Email" class="form-control input-md"><br>
 					<div class="overlap-text">
-						<input type="password" name="pass" placeholder="Password" required="required" class="form-control input-md" style="width: 100%;"><br>
+						<input type="password" name="pass" placeholder="Password" class="form-control input-md" style="width: 100%;"><br>
 
 					</div>
 
 					<center><button id="signin" class="button" name="login" style="background-color: #000000;">Login</button></center>
-					<?php include("login.php"); ?>
+					<!--<?php include("login.php"); ?>-->
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
+
 </body>
 
 </html>

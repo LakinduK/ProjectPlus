@@ -15,6 +15,11 @@ function insertPost(){
 		$image_tmp = $_FILES['upload_image']['tmp_name'];
 		$random_number = rand(1, 100);
 
+		if($title == "")
+		{
+			echo "<script>alert('enter title')</script>";
+		} 
+
 		if(strlen($content) < 10){
 			echo "<script>alert('Please Use 250 or grater than 10 words!')</script>";
 			echo "<script>window.open('home.php', '_self')</script>";
