@@ -27,6 +27,7 @@ include("includes/connection.php");
 				}
 				else {
 					echo"<script>alert('Your Email or Password is incorrect')</script>";
+					echo "<script>window.open('signin.php','_self')</script>";
 
 				}
 

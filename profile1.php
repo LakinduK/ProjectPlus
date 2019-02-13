@@ -24,8 +24,6 @@ include("includes/head.php");
 	<title><?php echo "$user_name"; ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style/allstyle.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style/home_style2.css">
   <style type="text/css">
   	input[type=text]{
@@ -49,6 +47,24 @@ include("includes/head.php");
   	}
   </style>
 
+<script type="text/javascript">
+	function validate() {
+		var batch= document.forms["edit_profile"]["batch"].value;
+		var pass= document.forms["edit_profile"]["upws"].value;
+
+		if(batch=="")
+		{
+			alert("enter your batch");
+			return false;
+		}
+		if(pass=="")
+		{
+			alert("enter password");
+			return false;
+		}
+	}
+</script>
+
 </head>
 <body>
 	<?php
@@ -59,7 +75,7 @@ include("includes/head.php");
 
 	<div><h1><small><center>Edit your prifile</center></small></h1></div>
 <div class="edit">
-<form name="edit_profile" class="edit_profile" action="edit.php" method="post">
+<form name="edit_profile" class="edit_profile" action="edit.php" method="post" onsubmit="return validate()">
 		<center>
 <table>
 	<tr><td>
