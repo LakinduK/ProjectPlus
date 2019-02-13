@@ -32,6 +32,7 @@
 		background-image: url("bg2.png");
 		background-color: black;
 		padding-top: 100px;
+		background-repeat: no-repeat;
 
 
 		overflow-x: hidden;
