@@ -11,6 +11,7 @@ include("includes/connection.php");
 		$select_user = "SELECT * FROM users WHERE user_email='$email' AND user_pass='$pass'";
 		$query= mysqli_query($con, $select_user);
 		$check_user = mysqli_num_rows($query);
+		$check_user2 = mysqli_num_rows($query);
 
 		if($check_user == 1){
 			$_SESSION['user_email'] = $email;
